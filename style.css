@@ -1,0 +1,38 @@
+header {
+  background-color: rgb(300,200,0);
+  display: auto;
+  height: 100px;
+  margin-top: 0px;
+  }
+ header ul li{
+  display: inline-block;
+  font-size: 20px;
+  margin: 30px 20px 20px 35px;
+   }
+img {
+  width: 800px;
+  height: 250px;
+  margin: 100px 50px;
+  }
+ body {
+  width: 960px;
+  min-height: 700px;
+  background-color: rgb(145, 197, 231);
+  margin: 30px auto;
+   color: green;
+  font-family: comic sans ms;
+  font-size: 18px;
+  text-align: justify;
+}
+
+h1 {
+  margin: 1px auto;
+  font-family: comic sans ms;
+  color: rgb(350, 190, 0) ;
+  size: 100px;
+}
+h2 {
+  margin-top: 20px;
+  color: rgb(189, 27, 27); 
+}
+
