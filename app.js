@@ -14,3 +14,8 @@ for (var i = 0; i < array.length; i++) {
   console.log(array[i]);
 }
 
+//function to generate random number of customer per hour:
+
+function random(n, b) {
+  return (Math.random() * (b-n) + n)|0;
+};

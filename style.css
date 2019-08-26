@@ -1,4 +1,4 @@
-header {
+header, head {
   background-color: rgb(300,200,0);
   display: auto;
   height: 100px;
@@ -31,7 +31,12 @@ h1 {
   color: rgb(350, 190, 0) ;
   size: 100px;
 }
-h2 {
+table{
   margin-top: 20px;
-  color: rgb(189, 27, 27); 
+  color: black; 
+  border: 2px;
+  width: auto;
+  background-color: rgb(229, 147, 229);
+
+
 }
