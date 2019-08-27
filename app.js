@@ -1,16 +1,123 @@
 'use strict';
 
-var location = {Minimum number of customers:"", Maximum number of customers:"", Average number of cookies purchased by customer:""};
+// var location = {Minimum number of customers:"", Maximum number of customers:"", Average number of cookies purchased by customer:""};
 
 
-//Assuming that window.crypto.getRandomValues is available 
-//Trying to gnerate a random number of customers per hour
+// //Assuming that window.crypto.getRandomValues is available 
+// //Trying to gnerate a random number of customers per hour
 
-var array = new Uint32Array(14);
-numCustomerPerHour.getRandomValues(array);
+// var array = new Uint32Array(14);
+// numCustomerPerHour.getRandomValues(array);
 
-console.log("Number of customer per hour:");
-for (var i = 0; i < array.length; i++) {
-  console.log(array[i]);
+// console.log("Number of customer per hour:");
+// for (var i = 0; i < array.length; i++) {
+//   console.log(array[i]);
+// }
+
+//Array to hold hours:
+var hours = ['6am', '7am','8am','9am','10am','11am','12am','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
+
+//Variable to hold the ul in the DOM:
+var salesEl = document.getElementById('Sales');
+
+// an array to hold the hours
+var hours = ['6am', '7am', '8am', '9am'];
+
+// variable to hold the ul in the DOM
+var salesEl = document.getElementById('sales');
+
+// object literal for each location
+var pike = {
+  name: 'first and Pike',
+  minCustomers: 23,
+  maxCustomers: 65,
+  avgCookiesPerCustomer: 6.3,
+
+  var seatac = {
+    name:'SeaTac Airport'
+    minCustomers: 3,
+    maxCustomers: 24,
+    avgCookiesPerustomer: 1.2,
+  };
+  
+  var seacenter = {
+    name:'Seattle Center'
+    minCustomers: 11,
+    maxCustomers: 38,
+    avgCookiesPerustomer: 3.7,
+  };
+  
+  var capitol = {
+    name:'Capitol Hill'
+    minCustomers: 20,
+    maxCustomers: 38,
+    avgCookiesPerustomer: 2.3,
+  };
+  
+  var alki = {
+    name:'Alki'
+    minCustomers: 2,
+    maxCustomers: 16,
+    avgCookiesPerustomer: 4.6,
+  };
+
+  cookiesSoldEachHourArr: [],
+  customersPerHourArr: [],
+  totalPerDay: 0,
+
+  calcCustomersEachHour: function(){
+    for(var i = 0; i < hours.length; i++){
+      var customersEachHour = generateRandom(this.minCustomers, this.maxCustomers);
+
+      this.customersPerHourArr.push(customersEachHour);
+
+    }
+  },
+
+  calcCookiesSoldEachHour: function(){
+    // we have an array of customers each hour
+    // we have average cookies sold per customer
+    // we want an array of the customers times the average cookies
+    for(var i = 0; i < hours.length; i++){
+      var oneHourOfSales = Math.floor(this.customersPerHourArr[i] * this.avgCookiesPerCustomer);
+
+      console.log('this is One Hour Of Sales', oneHourOfSales);
+
+      this.cookiesSoldEachHourArr.push(oneHourOfSales);
+      this.totalPerDay += oneHourOfSales;
+    }
+  },
+
+  render: function(){
+    // MUST generate customers each hour BEFORE generating cookies each hour
+    this.calcCustomersEachHour();
+    this.calcCookiesSoldEachHour();
+
+    // 1. create an element
+    var liEl = document.createElement('li');
+    // 2. give it content
+    liEl.textContent = this.name;
+    // 3. append it to the DOM
+    salesEl.appendChild(liEl);
+
+    for(var i = 0; i<hours.length; i++){
+      var liEl = document.createElement('li');
+      liEl.textContent = `${hours[i]}: ${this.cookiesSoldEachHourArr[i]} cookies`;
+      salesEl.appendChild(liEl);
+    }
+
+    liEl = document.createElement('li');
+    liEl.textContent = this.totalPerDay;
+    salesEl.appendChild(liEl);
+  }
 }
+
+pike.render();
+  // method: calculates the cookies sold each hour
+  // method: rending it to the DOM
+function generateRandom(min, max){
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
 
