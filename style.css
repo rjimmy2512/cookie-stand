@@ -1,4 +1,4 @@
-header {
+header, head {
   background-color: rgb(300,200,0);
   display: auto;
   height: 100px;
@@ -31,7 +31,26 @@ h1 {
   color: rgb(350, 190, 0) ;
   size: 100px;
 }
-h2 {
+#SalesTable {
   margin-top: 20px;
-  color: rgb(189, 27, 27); 
+  color: black; 
+  border: 2px;
+  width: auto;
+  background-color: rgb(229, 147, 229);
 }
+#DailyProjections {
+  font-family: comic sans ms;
+  color: black;
+  background-color: blanchedalmond;
+  border-collapse: collapse;
+  width: 100%;
+}
+#DailyProjections td, th {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+#DailyProjections tr:nth-child(even) {
+  background-color: rgb(240, 170, 240);
+}
+
