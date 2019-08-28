@@ -5,8 +5,8 @@
 var tableEl = document.getElementById('table');
 var allLocations = [];
 // constructor for locations:
-function Location('name', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total'){
-  this.name = 'name';
+function Location(name, '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total'){
+  this.name = name;
   this.cookiesAt6am = '6:00am';
   this.cookiesAt7am = '7:00am';
   this.cookiesAt8am = '8:00am';
@@ -25,7 +25,7 @@ function Location('name', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11
   this.totalDailyLocation = 'Daily Location Total';
 
   allLocations.push(this);
-}
+};
 
 Location.prototype.render = function(){
   // make a tr
@@ -147,7 +147,7 @@ Location.prototype.render = function(){
   tdEl.textContent = this.totalDailyLocation;
   // stick it to the DOM
   trEl.appendChild(tdEl);
-}
+};
 
 new Location('1st and Pike', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
 new Location('SeaTac Airport', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
@@ -250,9 +250,9 @@ function renderHeader(){
   tdEl = document.createElement('td');
   tdEl.textContent = 'Daily Location Total';
   trEl.appendChild(tdEl);
-}
+};
 
 renderHeader();
-for (var i = 0; i < allLocations.length; i++) {
+for (var i = 0; i < allLocations.length; i++){
   allLocations[i].render();
 }
