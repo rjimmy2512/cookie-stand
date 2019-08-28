@@ -1,123 +1,258 @@
 'use strict';
 
-// var location = {Minimum number of customers:"", Maximum number of customers:"", Average number of cookies purchased by customer:""};
+// we want to render the same table in the HTML but in JS
 
+var tableEl = document.getElementById('table');
+var allLocations = [];
+// constructor for locations:
+function Location(name, '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total'){
+  this.name = name;
+  this.cookiesAt6am = '6:00am';
+  this.cookiesAt7am = '7:00am';
+  this.cookiesAt8am = '8:00am';
+  this.cookiesAt9am = '9:00am';
+  this.cookiesAt10am = '10:am';
+  this.cookiesAt11am = '11:00am';
+  this.cookiesAt12pm = '12:00pm';
+  this.cookiesAt1pm = '1:00pm';
+  this.cookiesAt2pm = '2:00pm';
+  this.cookiesAt3pm = '3:00pm';
+  this.cookiesAt4pm = '4:00pm';
+  this.cookiesAt5pm = '5:00pm';
+  this.cookiesAt6pm = '6:00pm';
+  this.cookiesAt7pm = '7:00pm';
+  this.cookiesAt8pm = '8:00pm';
+  this.totalDailyLocation = 'Daily Location Total';
 
-// //Assuming that window.crypto.getRandomValues is available 
-// //Trying to gnerate a random number of customers per hour
-
-// var array = new Uint32Array(14);
-// numCustomerPerHour.getRandomValues(array);
-
-// console.log("Number of customer per hour:");
-// for (var i = 0; i < array.length; i++) {
-//   console.log(array[i]);
-// }
-
-//Array to hold hours:
-var hours = ['6am', '7am','8am','9am','10am','11am','12am','1pm','2pm','3pm','4pm','5pm','6pm','7pm','8pm'];
-
-//Variable to hold the ul in the DOM:
-var salesEl = document.getElementById('Sales');
-
-// an array to hold the hours
-var hours = ['6am', '7am', '8am', '9am'];
-
-// variable to hold the ul in the DOM
-var salesEl = document.getElementById('sales');
-
-// object literal for each location
-var pike = {
-  name: 'first and Pike',
-  minCustomers: 23,
-  maxCustomers: 65,
-  avgCookiesPerCustomer: 6.3,
-
-  var seatac = {
-    name:'SeaTac Airport'
-    minCustomers: 3,
-    maxCustomers: 24,
-    avgCookiesPerustomer: 1.2,
-  };
-  
-  var seacenter = {
-    name:'Seattle Center'
-    minCustomers: 11,
-    maxCustomers: 38,
-    avgCookiesPerustomer: 3.7,
-  };
-  
-  var capitol = {
-    name:'Capitol Hill'
-    minCustomers: 20,
-    maxCustomers: 38,
-    avgCookiesPerustomer: 2.3,
-  };
-  
-  var alki = {
-    name:'Alki'
-    minCustomers: 2,
-    maxCustomers: 16,
-    avgCookiesPerustomer: 4.6,
-  };
-
-  cookiesSoldEachHourArr: [],
-  customersPerHourArr: [],
-  totalPerDay: 0,
-
-  calcCustomersEachHour: function(){
-    for(var i = 0; i < hours.length; i++){
-      var customersEachHour = generateRandom(this.minCustomers, this.maxCustomers);
-
-      this.customersPerHourArr.push(customersEachHour);
-
-    }
-  },
-
-  calcCookiesSoldEachHour: function(){
-    // we have an array of customers each hour
-    // we have average cookies sold per customer
-    // we want an array of the customers times the average cookies
-    for(var i = 0; i < hours.length; i++){
-      var oneHourOfSales = Math.floor(this.customersPerHourArr[i] * this.avgCookiesPerCustomer);
-
-      console.log('this is One Hour Of Sales', oneHourOfSales);
-
-      this.cookiesSoldEachHourArr.push(oneHourOfSales);
-      this.totalPerDay += oneHourOfSales;
-    }
-  },
-
-  render: function(){
-    // MUST generate customers each hour BEFORE generating cookies each hour
-    this.calcCustomersEachHour();
-    this.calcCookiesSoldEachHour();
-
-    // 1. create an element
-    var liEl = document.createElement('li');
-    // 2. give it content
-    liEl.textContent = this.name;
-    // 3. append it to the DOM
-    salesEl.appendChild(liEl);
-
-    for(var i = 0; i<hours.length; i++){
-      var liEl = document.createElement('li');
-      liEl.textContent = `${hours[i]}: ${this.cookiesSoldEachHourArr[i]} cookies`;
-      salesEl.appendChild(liEl);
-    }
-
-    liEl = document.createElement('li');
-    liEl.textContent = this.totalPerDay;
-    salesEl.appendChild(liEl);
-  }
+  allLocations.push(this);
 }
 
-pike.render();
-  // method: calculates the cookies sold each hour
-  // method: rending it to the DOM
-function generateRandom(min, max){
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+Location.prototype.render = function(){
+  // make a tr
+  var trEl = document.createElement('tr');
+  tableEl.appendChild(trEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.name;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt6am;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt7am;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt8am;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt9am;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt10am;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt11am;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt12pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt1pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt2pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt3pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt4pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt5pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt6pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt7pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.cookiesAt8pm;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
+
+  // create a td
+  var tdEl = document.createElement('td');
+  // fill it with name
+  tdEl.textContent = this.totalDailyLocation;
+  // stick it to the DOM
+  trEl.appendChild(tdEl);
 }
 
+new Location('1st and Pike', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
+new Location('SeaTac Airport', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
+new Location('Seattle Center', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
+new Location('Capitol Hill', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
+new Location('Alki', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
+new Location('Totals', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
 
 
+// 1. create the element
+// 2. give it content
+// 3. append to the parent in the DOM
+
+function renderHeader(){
+  // make a tr and stick it to the DOM
+  var trEl = document.createElement('tr');
+  tableEl.appendChild(trEl);
+
+  // put 'blank' in the DOM
+  var tdEl = document.createElement('td');
+  tdEl.textContent = '';
+  trEl.appendChild(tdEl);
+
+  // put the 6:00am in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '6:00am';
+  trEl.appendChild(tdEl);
+
+  // put the 7:00am in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '7:00am';
+  trEl.appendChild(tdEl);
+
+  // put 8:00am in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '8:00am';
+  trEl.appendChild(tdEl);
+
+  // put 9:00am in the DOM
+  var tdEl = document.createElement('td');
+  tdEl.textContent = '9:00am';
+  trEl.appendChild(tdEl);
+
+  // put the 10:00am in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '10:00am';
+  trEl.appendChild(tdEl);
+
+  // put the 11:00am in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '11:00am';
+  trEl.appendChild(tdEl);
+
+  // put 12:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '12:00pm';
+  trEl.appendChild(tdEl);
+
+  // put the 1:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '1:00pm';
+  trEl.appendChild(tdEl);
+
+  // put the 2:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '2:00pm';
+  trEl.appendChild(tdEl);
+
+  // put 3:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '3:00pm';
+  trEl.appendChild(tdEl);
+
+  // put 4:00pm in the DOM
+  var tdEl = document.createElement('td');
+  tdEl.textContent = '4:00pm';
+  trEl.appendChild(tdEl);
+
+  // put the 5:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '5:00pm';
+  trEl.appendChild(tdEl);
+
+  // put the 6:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '6:00pm';
+  trEl.appendChild(tdEl);
+
+  // put 7:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '7:00pm';
+  trEl.appendChild(tdEl);
+
+  // put the 8:00pm in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = '8:00pm';
+  trEl.appendChild(tdEl);
+
+  // put the daily location total in the DOM
+  tdEl = document.createElement('td');
+  tdEl.textContent = 'Daily Location Total';
+  trEl.appendChild(tdEl);
+}
+
+renderHeader();
+for (var i = 0; i < allLocations.length; i++) {
+  allLocations[i].render();
+}
