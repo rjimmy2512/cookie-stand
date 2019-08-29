@@ -154,8 +154,7 @@ new Location('SeaTac Airport', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am'
 new Location('Seattle Center', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
 new Location('Capitol Hill', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
 new Location('Alki', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
-new Location('Totals', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
-
+new Location('Totals', 'total6am', 'total7am', 'total8am', 'total9am', 'total10am', 'total11am', 'total12pm', 'total1pm', 'total2pm', 'total3pm', 'total4pm', 'total5pm', 'total6pm', 'total7pm', 'total8pm', 'Daily Location Total');
 
 // 1. create the element
 // 2. give it content
