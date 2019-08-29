@@ -5,24 +5,24 @@
 var tableEl = document.getElementById('table');
 var allLocations = [];
 // constructor for locations:
-function Location(name, '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total'){
+function Location(name, cookieshour1, cookieshour2,cookieshour3,cookieshour4, cookieshour5,cookieshour6, cookieshour7, cookieshour8, cookieshour9, cookieshour10, cookieshour11, cookieshour12, cookieshour13, cookieshour14, cookieshour15, cookieshourstotal){
   this.name = name;
-  this.cookiesAt6am = '6:00am';
-  this.cookiesAt7am = '7:00am';
-  this.cookiesAt8am = '8:00am';
-  this.cookiesAt9am = '9:00am';
-  this.cookiesAt10am = '10:am';
-  this.cookiesAt11am = '11:00am';
-  this.cookiesAt12pm = '12:00pm';
-  this.cookiesAt1pm = '1:00pm';
-  this.cookiesAt2pm = '2:00pm';
-  this.cookiesAt3pm = '3:00pm';
-  this.cookiesAt4pm = '4:00pm';
-  this.cookiesAt5pm = '5:00pm';
-  this.cookiesAt6pm = '6:00pm';
-  this.cookiesAt7pm = '7:00pm';
-  this.cookiesAt8pm = '8:00pm';
-  this.totalDailyLocation = 'Daily Location Total';
+  this.cookiesAt6am = cookieshour1;
+  this.cookiesAt7am = cookieshour2;
+  this.cookiesAt8am = cookieshour3;
+  this.cookiesAt9am = cookieshour4;
+  this.cookiesAt10am = cookieshour5;
+  this.cookiesAt11am = cookieshour6;
+  this.cookiesAt12pm = cookieshour7;
+  this.cookiesAt1pm = cookieshour8;
+  this.cookiesAt2pm = cookieshour9;
+  this.cookiesAt3pm = cookieshour10;
+  this.cookiesAt4pm = cookieshour11;
+  this.cookiesAt5pm = cookieshour12;
+  this.cookiesAt6pm = cookieshour13;
+  this.cookiesAt7pm = cookieshour14;
+  this.cookiesAt8pm = cookieshour15;
+  this.totalDailyLocation = cookieshourstotal;
 
   allLocations.push(this);
 };
