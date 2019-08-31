@@ -140,7 +140,6 @@ Location.prototype.render = function(){
   tdEl.textContent = this.cookiesAt8pm;
   // stick it to the DOM
   trEl.appendChild(tdEl);
-<<<<<<< HEAD
 
   // create a td
   var tdEl = document.createElement('td');
@@ -156,16 +155,6 @@ new Location('Seattle Center', 38*3.7*0.5|0,38*3.7*0.75|0, 38*3.7*1|0,38*3.7*0.6
 new Location('Capitol Hill', 38*2.3*0.5|0,38*2.3*0.75|0, 38*2.3*1|0,38*2.3*0.6|0, 38*2.3*0.8|0,38*2.3*1|0,38*2.3*0.7|0,38*2.3*0.4|0,38*2.3*0.6|0,38*2.3*0|0.9,38*2.3*0.7|0,38*2.3*0.5|0,38*2.3*0.3|0, 38*2.3*0.4|0,38*2.3*0.6|0, 'Daily Location Total');
 new Location('Alki',16*4.6*0.5|0,16*4.6*0.75|0, 16*4.6*1|0,16*4.6*0.6|0, 16*4.6*0.8|0,16*4.6*1|0,16*4.6*0.7|0,16*4.6*0.4|0,16*4.6*0.6|0,16*4.6*0.9|0,16*4.6*0.7|0,16*4.6*0.5|0,16*4.6*0.3|0, 16*4.6*0.4|0,16*4.6*0.6|0, 'Daily Location Total');
 new Location('Totals', 'total6am', 'total7am', 'total8am', 'total9am', 'total10am', 'total11am', 'total12pm', 'total1pm', 'total2pm', 'total3pm', 'total4pm', 'total5pm', 'total6pm', 'total7pm', 'total8pm', 'Daily Location Total');
-=======
-
-  // create a td
-  var tdEl = document.createElement('td');
-  // fill it with name
-  tdEl.textContent = this.totalDailyLocation;
-  // stick it to the DOM
-  trEl.appendChild(tdEl);
-};
->>>>>>> 8a4a0ff7db7c63b093ae22a29eb689e66d2c42ce
 
 new Location('1st and Pike', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
 new Location('SeaTac Airport', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
@@ -183,15 +172,9 @@ function renderHeader(){
   var trEl = document.createElement('tr');
   tableEl.appendChild(trEl);
 
-<<<<<<< HEAD
   // put 'Location' in the DOM
   var tdEl = document.createElement('td');
   tdEl.textContent = 'LOCATION';
-=======
-  // put 'blank' in the DOM
-  var tdEl = document.createElement('td');
-  tdEl.textContent = '';
->>>>>>> 8a4a0ff7db7c63b093ae22a29eb689e66d2c42ce
   trEl.appendChild(tdEl);
 
   // put the 6:00am in the DOM
