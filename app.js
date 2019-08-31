@@ -149,11 +149,11 @@ Location.prototype.render = function(){
   trEl.appendChild(tdEl);
 };
 
-new Location('1st and Pike', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
-new Location('SeaTac Airport', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
-new Location('Seattle Center', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
-new Location('Capitol Hill', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
-new Location('Alki', '6:00am', '7:00am', '8:00am', '9:00am', '10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm', '8:00pm', 'Daily Location Total');
+new Location('1st and Pike', 65*6.3*0.5|0,65*6.3*0.75|0, 65*6.3*1|0,65*6.3*0.6|0, 65*6.3*0.8|0,65*6.3*1|0,65*6.3*0.7|0,65*6.3*0.4|0,65*6.3*0.6|0,65*6.3*0.9|0,65*6.3*0.7|0,65*6.3*0.5|0,65*6.3*0.3|0, 65*6.3*0.4|0,65*6.3*0.6|0, 'Daily Location Total');
+new Location('SeaTac Airport',24*1.2*0.5|0,24*1.2*0.75|0, 24*1.2*1|0,24*1.2*0.6|0, 24*1.2*0.8|0,24*1.2*1|0,24*1.2*0.7|0,24*1.2*0.4|0,24*1.2*0.6|0,24*1.2*0.9|0,24*1.2*0.7|0,24*1.2*0.5|0,24*1.2*0.3|0, 24*1.2*0.4|0,24*1.2*0.6|0, 'Daily Location Total');
+new Location('Seattle Center', 38*3.7*0.5|0,38*3.7*0.75|0, 38*3.7*1|0,38*3.7*0.6|0, 38*3.7*0.8|0,38*3.7*1|0,38*3.7*0.7|0,38*3.7*0.4|0,38*3.7*0.6|0,38*3.7*0.9|0,38*3.7*0.7|0,38*3.7*0.5|0,38*3.7*0.3|0, 38*3.7*0.4|0,38*3.7*0.6|0, 'Daily Location Total');
+new Location('Capitol Hill', 38*2.3*0.5|0,38*2.3*0.75|0, 38*2.3*1|0,38*2.3*0.6|0, 38*2.3*0.8|0,38*2.3*1|0,38*2.3*0.7|0,38*2.3*0.4|0,38*2.3*0.6|0,38*2.3*0|0.9,38*2.3*0.7|0,38*2.3*0.5|0,38*2.3*0.3|0, 38*2.3*0.4|0,38*2.3*0.6|0, 'Daily Location Total');
+new Location('Alki',16*4.6*0.5|0,16*4.6*0.75|0, 16*4.6*1|0,16*4.6*0.6|0, 16*4.6*0.8|0,16*4.6*1|0,16*4.6*0.7|0,16*4.6*0.4|0,16*4.6*0.6|0,16*4.6*0.9|0,16*4.6*0.7|0,16*4.6*0.5|0,16*4.6*0.3|0, 16*4.6*0.4|0,16*4.6*0.6|0, 'Daily Location Total');
 new Location('Totals', 'total6am', 'total7am', 'total8am', 'total9am', 'total10am', 'total11am', 'total12pm', 'total1pm', 'total2pm', 'total3pm', 'total4pm', 'total5pm', 'total6pm', 'total7pm', 'total8pm', 'Daily Location Total');
 
 
