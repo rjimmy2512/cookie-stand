@@ -1,6 +1,6 @@
 'use strict';
 
-var tableEl = document.getElementById('table');
+var tableEl = document.getElementById('table-sales');
 var tbodyEl = document.createElement('tbody');
 
 var allShops = [];
