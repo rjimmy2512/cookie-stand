@@ -9,7 +9,6 @@ header, head {
   font-size: 20px;
   margin: 30px 20px 20px 20px;
    }
-
  body {
   width: 960px;
   min-height: 700px;
@@ -28,11 +27,6 @@ h1 {
   size: 100px;
 }
 
-body {
-  background-color: lightblue;
-  width: 70%;
-  margin: auto;
-}
 table {
   padding: 1em;
   margin: 1em;
