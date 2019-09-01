@@ -7,7 +7,7 @@ header, head {
  header ul li{
   display: inline-block;
   font-size: 20px;
-  margin: 30px 20px 20px 35px;
+  margin: 30px 20px 20px 20px;
    }
 
  body {
@@ -17,12 +17,12 @@ header, head {
   margin: 30px auto;
    color: green;
   font-family: comic sans ms;
-  font-size: 18px;
+  font-size: 14px;
   text-align: justify;
 }
 
 h1 {
-  margin: 1px auto;
+  margin: 60px auto;
   font-family: comic sans ms;
   color: rgb(350, 190, 0) ;
   size: 100px;
