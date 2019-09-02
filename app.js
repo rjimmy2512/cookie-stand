@@ -62,13 +62,11 @@ new Shop('SeaTac Airport', 3, 24, 1.2);
 new Shop('Seattle Center', 11, 38, 3.7);
 new Shop('Capitol Hill', 20, 38, 2.3);
 new Shop('Alki', 2, 16,4.6);
-//new Shop(name, minCustomer, maxCustomer, avgCookies);
 
 //render header
 function renderHeader() {
   //create header section
-  var theadEl = document.createElement('thead');
-  tableEl.appendChild(theadEl);
+  var theadEl = document.createElement('thead');  tableEl.appendChild(theadEl);
   //create header row
   var trEl = document.createElement('tr');
   theadEl.appendChild(trEl);
@@ -186,3 +184,4 @@ var cel17 = newRow.insertCell(16);
 //cel16.innerHTML = name;
 //cel17.innerHTML = age;
 };
+
