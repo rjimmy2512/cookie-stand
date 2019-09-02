@@ -66,8 +66,7 @@ new Shop('Alki', 2, 16,4.6);
 //render header
 function renderHeader() {
   //create header section
-  var theadEl = document.createElement('thead');
-  tableEl.appendChild(theadEl);
+  var theadEl = document.createElement('thead');  tableEl.appendChild(theadEl);
   //create header row
   var trEl = document.createElement('tr');
   theadEl.appendChild(trEl);
@@ -129,3 +128,60 @@ function renderFooter() {
 
 renderHeader();
 renderFooter();
+
+//add shop function
+function addRow() {
+// get input values
+var name = document.getElementById('name').value;
+var minCustomers = document.getElementById('mincustomers').value;
+var maxCustomers = document.getElementById('maxCustomers').value;
+var avgCookiesPerSale = document.getElementById('avgCookiesPerSale').value;
+
+  // get the html table
+// 6 = the first table
+var table = document.getElementsByTagName('table-sales')[6];                 
+
+  // add new empty row to the table
+// 0 = in the top 
+// table.rows.length = the end
+// table.rows.length/2+1 = the center
+var newRow = table.insertRow(table.rows.length/2+1);
+// add cells to the row
+var cel1 = newRow.insertCell(0);
+var cel2 = newRow.insertCell(1);
+var cel3 = newRow.insertCell(2);
+var cel4 = newRow.insertCell(3);
+var cel5 = newRow.insertCell(4);
+var cel6 = newRow.insertCell(5);
+var cel7 = newRow.insertCell(6);
+var cel8 = newRow.insertCell(7);
+var cel9 = newRow.insertCell(8);
+var cel10 = newRow.insertCell(9);
+var cel11 = newRow.insertCell(10);
+var cel12 = newRow.insertCell(11);
+var cel13 = newRow.insertCell(12);
+var cel14 = newRow.insertCell(13);
+var cel15 = newRow.insertCell(14);
+var cel16 = newRow.insertCell(15);
+var cel17 = newRow.insertCell(16);
+                 
+// add values to the cells
+//cel1.innerHTML = name;
+//cel2.innerHTML = age;
+//cel3.innerHTML = age;
+//cel4.innerHTML = name;
+//cel5.innerHTML = lname;
+//cel6.innerHTML = age;
+//cel7.innerHTML = name;
+//cel8.innerHTML = lname;
+//cel9.innerHTML = age;
+//cel10.innerHTML = name;
+//cel11.innerHTML = lname;
+//cel12.innerHTML = age;
+//cel13.innerHTML = name;
+//cel14.innerHTML = lname;
+//cel15.innerHTML = age;
+//cel16.innerHTML = name;
+//cel17.innerHTML = age;
+};
+
