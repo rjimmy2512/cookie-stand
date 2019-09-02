@@ -7,13 +7,8 @@ header, head {
  header ul li{
   display: inline-block;
   font-size: 20px;
-  margin: 30px 20px 20px 35px;
+  margin: 30px 20px 20px 20px;
    }
-img {
-  width: 800px;
-  height: 250px;
-  margin: 100px 50px;
-  }
  body {
   width: 960px;
   min-height: 700px;
@@ -21,35 +16,43 @@ img {
   margin: 30px auto;
    color: green;
   font-family: comic sans ms;
-  font-size: 18px;
+  font-size: 14px;
   text-align: justify;
 }
 
 h1 {
-  margin: 1px auto;
+  margin: 60px auto;
   font-family: comic sans ms;
   color: rgb(350, 190, 0) ;
   size: 100px;
 }
-#SalesTable {
-  margin-top: 20px;
-  color: black; 
-  border: 2px;
-  width: auto;
-  background-color: rgb(229, 147, 229);
+
+table {
+  padding: 1em;
+  margin: 1em;
 }
-#DailyProjections {
-  font-family: comic sans ms;
+th {
+  background-color: rgb(55, 56, 56);
+  color: white;
+  border: 2px solid red;
+  padding: 1em;
+  margin: 1em;
+}
+th:hover {
+  background-color: white;
   color: black;
-  background-color: blanchedalmond;
-  border-collapse: collapse;
-  width: 100%;
 }
-#DailyProjections td, th {
-  border: 1px solid black;
-  text-align: left;
-  padding: 8px;
+td {
+  background-color: rgb(55, 56, 56);
+  color: white;
+  border: 2px solid orange;
+  padding: 1em;
+  margin: 1em;
+  background-clip: padding-box;
+  border-radius: 30px;
+  border: 5px solid white;
 }
-#DailyProjections tr:nth-child(even) {
-  background-color: rgb(240, 170, 240);
+td:hover {
+  background-color: pink;
+  color: blue;
 }
