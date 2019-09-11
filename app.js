@@ -7,7 +7,7 @@ var table = document.getElementById('table-sales');
 //holds the instances of the objects entered in the constructor function
 var storesAll = [];
 var timeArray = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
-//constructor funciton
+//constructor function
 function Locations (name, min, max, averageCookieSale) {
   this.name = name;
   this.minCustomers = min;
