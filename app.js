@@ -22,7 +22,7 @@ function Locations (name, min, max, averageCookieSale) {
 //prototypes
 // generates our randomCustomerArray
 Locations.prototype.calcCustomersPerHour = function() {
-  for (var i = 0; i < timeArray.length; i++) {  
+  for(var i = 0; i < timeArray.length; i++) {  
     var randomNumberOfCustomers = randomNumber(
       this.minCustomers,
       this.maxCustomers
