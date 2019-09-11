@@ -3,34 +3,35 @@
     <link href="style.css" type="text/css" rel="stylesheet" />
     <header>
       <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about-us.html">About Us</a></li>
-      <li><a href="locations.html">Our Locations</a></li>
-      <li><a href="sales.html" type="text" rel="salessheet">Sales</a></li>
-      <li><a href="order.html">Order</a></li>
-      <li><a href="contact.html">Contact Us</a></li> 
-  </ul>
- <h1>Daily Sales Projections</h1>
-   <p>
-  <table>
-    <tbody id="table-sales"></tbody>
-  </table>
-  </p>
-    <form id="form">
-      <fieldset>
-        <h2>Add a new sale location</h2>
-        <label>Name of Location:</label>
-        <input Name of Location="Shop" type="text" /><br />
-        <label>Min. number of customers:</label>        
-        <input Max number of customers ="minCustomers" type="value" /><br/>
-        <label>Max. number of customers:</label>
-        <input Max number of customers ="maxCustomers" type="value" /><br/>
-        <label>Average number of cookies per sale:</label>
-        <input Max number of customers="avgCookies" type="value" /><br/>
-               
-        <button onclick="addRow();">Add Location</button><br/><br/>
-      </fieldset>
-    </form>
-  <script src="app.js" type="text/javascript"></script>
-  <footer></footer>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="locations.html">Our Locations</a></li>
+        <li><a href="sales.html" type="text" rel="salessheet">Sales</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="contact.html">Contact Us</a></li> 
+      </ul>
+    </header>
+  <body>
+    <h1>Daily Sales Projections</h1>
+      <p></p>
+    <table>
+      <tbody id="table-sales"></tbody>
+    </table>
+      <form id="newLocation">
+        <fieldset>
+          <legend>Add a new sale location</legend>
+          <label>Name of Location:</label>
+          <input name="name" type="text" /></br>
+          <label>Min. number of customers:</label>        
+          <input name="min" type="value" /></br>
+          <label>Max. number of customers:</label>
+          <input name="max" type="value" /></br>
+          <label>Average number of cookies per sale:</label>
+          <input name="averageCookieSale" type="value" /></br>
+          <button>Add Location</button>
+        </fieldset>
+      </form>
+        <script src="app.js" type="text/javascript"></script>
+    <footer></footer>
+  </body>
 </html>
