@@ -8,7 +8,12 @@ header, head {
   display: inline-block;
   font-size: 20px;
   margin: 30px 20px 20px 20px;
-   }
+  }
+header img {
+    width: 113px;
+    height:auto;
+    float: left;
+  }
  body {
   width: 960px;
   min-height: 700px;
@@ -16,15 +21,58 @@ header, head {
   margin: 30px auto;
    color: green;
   font-family: comic sans ms;
-  font-size: 14px;
+  font-size: 20px;
   text-align: justify;
 }
 
-h1 {
-  margin: 60px auto;
-  font-family: comic sans ms;
-  color: rgb(350, 190, 0) ;
-  size: 100px;
+.firstheader {
+  margin-top: 20px;
+  font-size: 30px;
+  position: relative;
+  text-align: center;
+  color: #55f25c;
+}
+
+.h1 {
+  position: absolute;
+  margin-top: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.familyimage {
+  margin-top: 20px;
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  color: #f00ba5;
+ }
+ 
+ .onpatfamily {
+  position: absolute;
+  margin-top: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }
+
+#cutter {
+  width: 20%;
+  padding: 10px;
+  float: left;
+  
+}
+#fishcookie {
+  width: 25%;
+  padding: 10px;
+  float:right;
+}
+
+#shirt {
+  float:left;
+  padding: 20px;
+  width: 25%;
 }
 
 table {
@@ -55,4 +103,22 @@ td {
 td:hover {
   background-color: pink;
   color: blue;
+}
+
+footer {
+  background-color: rgb(300,200,0);
+  display: auto;
+  height: 100px;
+  margin-bottom: 0px;
+  }
+ footer ul li{
+  display: inline-block;
+  font-size: 20px;
+  margin: 30px 20px 20px 40px;
+  }
+footer img {
+    width: 300px;
+    height:100px;
+    float:right;
+    margin-left: 100px;
 }
