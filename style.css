@@ -18,8 +18,7 @@ header img {
   width: 960px;
   min-height: 700px;
   background-color: rgb(145, 197, 231);
-  margin: 30px auto;
-   color: green;
+  color: green;
   font-family: comic sans ms;
   font-size: 20px;
   text-align: justify;
@@ -72,12 +71,13 @@ header img {
 #shirt {
   float:left;
   padding: 20px;
-  width: 25%;
+  width: 23%;
 }
 
 table {
-  padding: 1em;
-  margin: 1em;
+  width: 100%;
+  padding: 1px;
+  margin: 1px;
 }
 th {
   background-color: rgb(55, 56, 56);
