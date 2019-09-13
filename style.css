@@ -118,7 +118,7 @@ ol img {
   width: 50%;
 }
 
-input[type=text], select, textarea {
+contact input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -129,7 +129,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+contact input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -138,14 +138,42 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+contact input[type=submit]:hover {
   background-color: #45a049;
 }
 
 .container {
   border-radius: 5px;
+  text-align:left;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+order body{
+  font-family:Cabin Sketch;
+  font-size:25px;
+  background-image:;
+  background-size:cover;
+}
+order h1{
+  font-family:Cabin Sketch;
+  font-size:80px;
+}
+order form{
+  background-color:#211e1e;
+  color:white;
+  border-radius:5px;
+  height:auto;
+  width:450px;
+}
+#wrapper{
+  margin-top:-50px;
+ float:center;
+}
+order input, select {
+  font-family:Waiting for the Sunrise;
+  font-size:20px;
+  font-weight:bold;
 }
 
 footer {
