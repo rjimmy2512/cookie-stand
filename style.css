@@ -149,17 +149,19 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-order body{
+#order {
   font-family:Cabin Sketch;
   font-size:25px;
   background-image:;
   background-size:cover;
 }
-order h1{
+
+#orderheader {
   font-family:Cabin Sketch;
   font-size:80px;
 }
-order form{
+
+#orderform {
   background-color:#211e1e;
   color:white;
   border-radius:5px;
@@ -170,7 +172,8 @@ order form{
   margin-top:-50px;
  float:center;
 }
-order input, select {
+
+#orderform input, select {
   font-family:Waiting for the Sunrise;
   font-size:20px;
   font-weight:bold;
