@@ -4,8 +4,10 @@ header, head {
   height: 100px;
   margin-top: 0px;
   }
- header ul li{
+
+header ul li{
   display: inline-block;
+  font-family: comic sans ms;
   font-size: 20px;
   margin: 30px 20px 20px 20px;
   }
@@ -14,7 +16,7 @@ header img {
     height:auto;
     float: left;
   }
- body {
+body {
   width: 960px;
   min-height: 700px;
   background-color: rgb(145, 197, 231);
@@ -48,7 +50,7 @@ header img {
   color: #f00ba5;
  }
  
- .onpatfamily {
+.onpatfamily {
   position: absolute;
   margin-top: 200px;
   top: 50%;
@@ -168,28 +170,44 @@ input[type=submit]:hover {
   height:auto;
   width:450px;
 }
-#wrapper{
+#wrapper {
   margin-top:-50px;
  float:center;
 }
 
-#orderform input, select {
+#orderform input {
   font-family:Waiting for the Sunrise;
   font-size:20px;
   font-weight:bold;
+  width: 280px;
 }
+
+#orderform select {
+  font-family:Waiting for the Sunrise;
+  font-size:20px;
+  font-weight:bold;
+  width: 210px;
+}
+
+textarea {
+  width: 70%;
+}
+
 
 footer {
   background-color: rgb(300,200,0);
   display: auto;
   height: 100px;
   margin-bottom: 0px;
-  }
+}
+
  footer ul li{
   display: inline-block;
+  font-family: comic sans ms;
   font-size: 20px;
   margin: 30px 20px 20px 40px;
-  }
+}
+
 footer img {
     width: 300px;
     height:100px;
