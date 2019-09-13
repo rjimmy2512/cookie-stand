@@ -149,14 +149,14 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-#order {
+#orderbody {
   font-family:Cabin Sketch;
   font-size:25px;
   background-image:;
   background-size:cover;
 }
 
-#orderheader {
+#orderfirstheading {
   font-family:Cabin Sketch;
   font-size:80px;
 }
