@@ -3,7 +3,7 @@ header, head {
   display: auto;
   height: 100px;
   margin-top: 0px;
-  }
+}
 
 header ul li{
   display: inline-block;
@@ -11,11 +11,13 @@ header ul li{
   font-size: 20px;
   margin: 30px 20px 20px 20px;
   }
+
 header img {
     width: 113px;
     height:auto;
     float: left;
-  }
+}
+
 body {
   width: 960px;
   min-height: 700px;
@@ -48,7 +50,7 @@ body {
   position: relative;
   text-align: center;
   color: #f00ba5;
- }
+}
  
 .onpatfamily {
   position: absolute;
@@ -56,7 +58,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
- }
+}
 
 #cutter {
   width: 20%;
@@ -64,6 +66,7 @@ body {
   float: left;
   
 }
+
 #fishcookie {
   width: 25%;
   padding: 10px;
@@ -81,6 +84,12 @@ table {
   padding: 1px;
   margin: 1px;
 }
+
+#newLocation {
+  margin: 40px;
+  text-align:left;
+}
+
 th {
   background-color: rgb(55, 56, 56);
   color: white;
@@ -88,10 +97,12 @@ th {
   padding: 1em;
   margin: 1em;
 }
+
 th:hover {
   background-color: white;
   color: black;
 }
+
 td {
   background-color: rgb(55, 56, 56);
   color: white;
@@ -102,6 +113,7 @@ td {
   border-radius: 30px;
   border: 5px solid white;
 }
+
 td:hover {
   background-color: pink;
   color: blue;
@@ -168,8 +180,11 @@ input[type=submit]:hover {
   color:white;
   border-radius:5px;
   height:auto;
-  width:450px;
+  width:500px;
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
+
 #wrapper {
   margin-top:-50px;
  float:center;
@@ -190,8 +205,22 @@ input[type=submit]:hover {
 }
 
 textarea {
-  width: 70%;
+  width: 50%;
 }
+
+.checkbox {
+  text-align:left;
+}
+ 
+ .checkbox input {
+  margin: 0px -70px 0px -10px;
+}
+
+#submitbutton {
+  margin-bottom: 30px;
+  background-color: #a52a9c;
+}
+
 
 
 footer {
